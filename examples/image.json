@@ -1,0 +1,23 @@
+{
+	"user": "tobilg",
+	"name": "mini-webserver",
+	"namespace": "tobilg",
+	"repository_type": "image",
+	"status": 1,
+	"description": "Provides a server (via Express.js) to expose static files from the Docker host via HTTP",
+	"is_private": false,
+	"is_automated": true,
+	"can_edit": false,
+	"star_count": 2,
+	"pull_count": 130075,
+	"last_updated": "2017-06-13T12:28:26.787927Z",
+	"is_migrated": true,
+	"has_starred": false,
+	"full_description": "# mini-webserver\nProvides a minimal webserver (via Express.js) to expose static files from the Docker host via HTTP. This image is build on Alpine Linux (base image `mhart/alpine-node:0.10.40`) and aims for a minimal size.\n\n## Usage\nYou can expose a local directory which you want to have served via the `mini-webserver` by starting it with\n\n`docker run --name mini-web -p 8080:3000 -v /path/to/local/folder:/app/public:ro -d tobilg/mini-webserver`\n\nIn this example, the port on the docker host where the `mini-webserver` is reachable is `8080`.\n\n### Logging\n\nThe Express.js app uses `morgan` to pipe the web logs to the `STDOUT`. This means that the logs are visible via `docker logs mini-web` (if the container name is `mini-web`).",
+	"affiliation": null,
+	"permissions": {
+		"read": true,
+		"write": false,
+		"admin": false
+	}
+}
